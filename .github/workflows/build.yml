@@ -6,6 +6,14 @@ defaults:
         shell: bash
 
 jobs:
+    tmate:
+        name: 'tmate'
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v3
+        - uses: mxschmitt/action-tmate@v3
+
     build-node:
         name: 'Build Node.js'
         runs-on: ubuntu-latest
