@@ -176,7 +176,7 @@ class App {
 		);
 
 		// 404 for all other requests
-		app.all('*', (_req, res) => res.status(StatusCodes.BAD_REQUEST).send('Bad request'));
+		app.all('*', (_req, res) => res.status(StatusCodes.BAD_REQUEST).send('A Bad request'));
 	}
 }
 
